@@ -10,6 +10,8 @@ function Tempo(props) {
     <div> Valor Estático => {props.staticDateString} </div>
     <div> A função getStaticProps() não vai pro frontend, podendo conter dados críticos </div>
     <div> Valores são atualizados em cada refresh </div>
+    <div> A propriedade "Revalidate" é a quantidade mínima, segundos, para revalidar os dados no backend </div>
+    <div> A Vercel usa o revalidate para fazer novas requisições ao back, e enquanto isso é entregue a última página estática gerada para todas as requisições </div>
     </>
   )
 }
